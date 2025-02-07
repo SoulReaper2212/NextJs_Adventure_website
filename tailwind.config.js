@@ -33,6 +33,7 @@ module.exports = {
           backgroundLightGreen:"#369958",
           titleYellow:"#f6eb00",
           titleWhite:"#fafaf5",
+          CreamGreen:"#efffe8",
           alpha:"#000000",
           accent:{
             DEFAULT : "#7edad2",
@@ -41,7 +42,8 @@ module.exports = {
           },
         },
      boxShadow: {
-      custom: "0px 14px 54px rgba(0,0,0,0.1)",
+      custom: "0px 20px 54px rgba(0,0,0,0.20)",
+      custom2: "20px 0px 54px rgba(0,0,0,0.20)"
      }
     },
   },

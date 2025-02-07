@@ -14,16 +14,23 @@
     }
 
     .h2 {
-      @apply  text-[36px] tracking-[-0.02em] leading-[44px] font-semibold;
+      @apply  font-primary text-[70px] xl:text-[120px] leading-none;
     }
 
     .h3 {
       @apply  text-[20px] font-semibold;
     }
 
+    .h4 {
+      @apply  text-[20px] xl:text-[35px] font-bold leading-none;
+    }
+
     .lead{
       @apply text-lg
 
+    }
+    .des{
+      @apply font-primary text-[15px] xl:text-[20px] text-titleYellow;
     }
 
     .btn{
@@ -49,6 +56,32 @@
       @apply text-accent transition-all duration-200;
     }
 
+    .ripple {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .ripple::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      background: rgba(0, 0, 0, 0.3); /* Adjust color and transparency */
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+      pointer-events: none;
+    }
+  
+    .ripple:active::after {
+      transform: translate(-50%, -50%) scale(4);
+      opacity: 1;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+  
     
   
 }
